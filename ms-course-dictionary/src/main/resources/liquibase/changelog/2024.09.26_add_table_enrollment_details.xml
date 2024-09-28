@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="2024.09.26_add_table_enrollment_details" author="Elvin Mehreliyev">
+
+        <createSequence sequenceName="enrollment_details__id" startValue="1" incrementBy="1"/>
+
+        <createTable schemaName="public " tableName="enrollment_details">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="enrollment_date" type="timestamp"/>
+            <column name="status" type="varchar(50)"/>
+            <column name="completed_activities" type="bigint"/>
+            <column name="progress" type="bigint"/>
+            <column name="completion_date" type="timestamp"/>
+            <column name="enrollment_id" type="bigint"/>
+            <column name="course_id" type="bigint"/>
+            <column name="certification_id" type ="bigint"/>
+
+        </createTable>
+
+        <addForeignKeyConstraint baseTableName="enrollment_details" baseColumnNames="enrollment_id" constraintName="fk_enrollment" referencedTableName="enrollments"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="enrollment_details" baseColumnNames="course_id" constraintName="fk_course" referencedTableName="course"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="enrollment_details" baseColumnNames="certification_id" constraintName="fk_certification" referencedTableName="certification"
+                                 referencedColumnNames="id"/>
+
+
+    </changeSet>
+
+
+
+
+</databaseChangeLog>

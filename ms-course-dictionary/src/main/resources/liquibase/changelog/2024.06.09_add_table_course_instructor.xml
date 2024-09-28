@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="2024.06.09_add_table_course_instructor" author="Elvin Mehreliyev">
+
+        <createTable tableName="course_instructor">
+            <column name="course_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="instructor_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+
+        <addPrimaryKey tableName="course_instructor" columnNames="course_id,instructor_id" constraintName="fk_course_instructor"/>
+
+        <addForeignKeyConstraint baseTableName="course_instructor" baseColumnNames="course_id" constraintName="fk_course" referencedTableName="course"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint baseTableName="course_instructor" baseColumnNames="instructor_id" constraintName="fk_instructor" referencedTableName="instructors"
+                                 referencedColumnNames="id"/>
+
+    </changeSet>
+
+
+</databaseChangeLog>

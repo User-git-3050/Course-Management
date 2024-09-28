@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ms-auth-course" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-certification" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-course" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-course-dictionary" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-course-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-discovery" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-enrollment" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-notification" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-report" />
+    <file type="web" url="file://$PROJECT_DIR$/ms-scheduler" />
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

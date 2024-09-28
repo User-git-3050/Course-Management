@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-auth-course" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-auth-course" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-certification" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-certification" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-course" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-course" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-course-dictionary" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-course-dictionary" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-course-gateway" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-course-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-discovery" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-discovery" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-enrollment" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-enrollment" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-notification" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-notification" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-report" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-report" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ms-scheduler" />
+        <option name="gradleJvm" value="openjdk-22" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ms-scheduler" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: ms-scheduler
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: mehreliyevelvin1@gmail.com
+    password: iyew uzvp aikg utuv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8090
+

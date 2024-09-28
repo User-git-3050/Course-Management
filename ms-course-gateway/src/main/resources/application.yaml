@@ -1,0 +1,68 @@
+spring:
+  application:
+    name: ms-course-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: ms-enrollment
+          uri : lb://MS-ENROLLMENT
+          predicates:
+            - Path=/api/enrollments/**
+          filters:
+            - RewritePath=/api/enrollments/(?<segment>.*), /api/v1/enrollments/${segment}
+            - AuthenticationFilter
+
+        - id: ms-course
+          uri : lb://MS-COURSE
+          predicates:
+            - Path=/api/courses/**
+          filters:
+            - RewritePath=/api/courses/(?<segment>.*), /api/v1/courses/${segment}
+            - AuthenticationFilter
+
+        - id: ms-certification
+          uri : lb://MS-CERTIFICATION
+          predicates:
+            - Path=/api/certifications/**
+          filters:
+            - RewritePath=/api/certifications/(?<segment>.*), /api/v1/certifications/${segment}
+            - AuthenticationFilter
+
+        - id: ms-notification
+          uri: lb://MS-NOTIFICATION
+          predicates:
+            - Path=/api/notifications/**
+          filters:
+            - RewritePath=/api/notifications/(?<segment>.*), /api/v1/notifications/${segment}
+            - AuthenticationFilter
+
+        - id: ms-report
+          uri: lb://MS-REPORT
+          predicates:
+            - Path=/api/reports/**
+          filters:
+            - RewritePath=/api/reports/(?<segment>.*), /api/v1/reports/${segment}
+            - AuthenticationFilter
+
+        - id: ms-auth-course
+          uri: lb://MS-AUTH-COURSE
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - RewritePath=/api/auth/(?<segment>.*), /api/v1/auth/${segment}
+  main:
+    web-application-type: reactive
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 8080

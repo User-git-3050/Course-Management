@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+
+    <include file="/liquibase/changelog/2024.09.26_add_table_users.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.09.26_add_table_enrollments.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.09.26.add_table_course.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.09.26_add_table_certification.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.09.26_add_table_enrollment_details.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.09.26_add_table_instructors.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.06.09_add_table_notification.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.06.09_add_table_enrollment_notification.xml" relativeToChangelogFile="false"/>
+    <include file="/liquibase/changelog/2024.06.09_add_table_course_instructor.xml" relativeToChangelogFile="false"/>
+
+
+
+
+
+
+
+
+</databaseChangeLog>

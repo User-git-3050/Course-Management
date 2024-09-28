@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Course Microservice Project.iml" filepath="$PROJECT_DIR$/.idea/Course Microservice Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-certification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-certification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-course-dictionary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-course-dictionary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-course.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-course.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-enrollment.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-enrollment.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-notification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-notification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-report.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-report.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ms-scheduler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ms-scheduler.main.iml" />
+    </modules>
+  </component>
+</project>
